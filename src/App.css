@@ -61,6 +61,9 @@ body {
 .footer-text {
   color: #667085;
 }
+.footer {
+  border-top: 1px solid #D0D5DD;
+}
 
 /* Share */
 .share-text {
