@@ -34,6 +34,7 @@ function App() {
             key={index}
             url={data.url}
             title={data.title}
+            id={data.id}
           />
         )
       })}
