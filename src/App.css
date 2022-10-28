@@ -6,13 +6,87 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+/* App */
+.share-icon svg{
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  color: #98A2B3;
+}
+.options-icon svg {
+  color: #98A2B3;
+}
+.share-icon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 280px;
+  top: 40px;
+  border: 1px dashed #D0D5DD;
+  border-radius: 50%;
+}
+.options-icon {
+  display: none;
+}
+.img-bg {
+  background-color: #344054BF;
+  border-radius: 50%;
+}
+.img-bg:hover #profile__img {
+  opacity: 0.3;
+}
+.cam-icon {
+  display: none;
+  position: absolute;
+  left: calc(50% - 12px);
+  bottom: calc(5px);
+  color: #F9FAFB;
+}
+.img-bg:hover .cam-icon {
+  display: inline;
+}
 /* Button */
 .link-btn {
   background-color: #EAECF0;
   color: #101828;
 }
+.link-btn:hover {
+  background-color: #D0D5DD;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+}
+.link-btn h1 {
+  font-weight: 500;
+}
 
 /* Footer */
 .footer-text {
   color: #667085;
+}
+
+/* Share */
+.share-text {
+  padding: 6px 10px;
+  border: 1px solid #D0D5DD;
+  border-radius: 4px;
+  position: absolute;
+  background-color: #D0D5DD;
+}
+
+@media only screen and (max-width: 900px) {
+  .options-icon {
+    position: absolute;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    right: 18px;
+    top: 35px;
+    border: 1px dashed #D0D5DD;
+    border-radius: 50%;
+  }
+  .share-text{
+    top: 80px;
+    right: 18px;
+  }
+  .share-icon {
+    display: none;
+  }
 }
