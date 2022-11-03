@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import {SlOptions} from 'react-icons/sl';
 import { RWebShare } from 'react-web-share';
 import { useEffect } from "react";
-import {BiShare, BiCamera} from 'react-icons/bi';
+import {BiShare} from 'react-icons/bi';
 
 const Share = () => {
     const [share, setShare] = useState(false);
@@ -39,7 +39,8 @@ const Share = () => {
         <button className="share-icon flex items-center justify-center"><BiShare fontSize='1.3rem'/></button>
       </RWebShare>
       <button className="options-icon flex items-center justify-center" onClick={() => handleShare()}><SlOptions fontSize='1.3rem'/></button>
-      {share && <div className="mobile-share">
+      {share && 
+      <div className="mobile-share">
         <RWebShare
           data={{
             text: "See my stage 1 task",
