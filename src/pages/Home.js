@@ -34,6 +34,7 @@ const Home = () => {
             url={data.url}
             title={data.title}
             id={data.id}
+            internal={data.internal}
           />
         )
       })}
