@@ -84,7 +84,7 @@ body {
   display: block;
   margin-bottom: 6px;
 }
-.contact input::placeholder {
+.contact input::placeholder, .contact textarea::placeholder {
   font-size: 16px;
   color: #667085;;
 }
@@ -101,6 +101,10 @@ input[type=checkbox] {
 .contact-submit {
   background-color: #1570EF;
   border-radius: 8px;
+}
+.success-msg {
+  left: calc(50% - 55px);
+  bottom: -10px;
 }
 
 @media only screen and (max-width: 900px) {
