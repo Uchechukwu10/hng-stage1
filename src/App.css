@@ -94,13 +94,28 @@ input[type=text], input[type=email], textarea {
   border-radius: 8px;
   width: 100%;
 }
+input[type=text]:focus, input[type=email]:focus {
+  border: 1.4px solid #84CAFF;
+  outline: none;
+}
+textarea:focus {
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #D1E9FF;
+  outline: none;
+}
 input[type=checkbox] {
   width: 20px;
   height: 20px;
+  border-radius: 20px;
+}
+input[type=checkbox]:hover {
+  box-shadow: 0px 0px 0px 2px #D1E9FF;
 }
 .contact-submit {
   background-color: #1570EF;
   border-radius: 8px;
+}
+.contact-submit:hover {
+  background-color: #175CD3;
 }
 .success-msg {
   left: calc(50% - 55px);
