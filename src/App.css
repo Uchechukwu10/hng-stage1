@@ -75,8 +75,32 @@ body {
 }
 
 /* Contact */ 
-.contact {
-  padding: 156px 360px 188px 360px;
+.contact-details {
+  width: 720px;
+}
+.label {
+  font-size: 14px;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 6px;
+}
+.contact input::placeholder {
+  font-size: 16px;
+  color: #667085;;
+}
+input[type=text], input[type=email], textarea {
+  padding: 10px 0 10px 14px;
+  border: 1px solid #D0D5DD;
+  border-radius: 8px;
+  width: 100%;
+}
+input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+}
+.contact-submit {
+  background-color: #1570EF;
+  border-radius: 8px;
 }
 
 @media only screen and (max-width: 900px) {
