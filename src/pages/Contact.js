@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { validate } from '../assets/validate';
 
 const Contact = () => {
+  const myName = 'Uche'
   const [success, setSuccess] = useState(false);
   const [touched, setTouched] = useState({
     firstName: false,
@@ -140,7 +141,7 @@ const Contact = () => {
           </div>
           <div className='py-3 flex md:items-center'>
               <input type='checkbox' id='agreement' name='agreement' className='mr-3 mt-1 md:mt-0' onChange={handleCheck}/>
-              <label htmlFor='agreement' style={{color: '#475467'}}>You agree to providing your data to Uche who may contact you.</label>
+              <label htmlFor='agreement' style={{color: '#475467'}}>You agree to providing your data to {myName} who may contact you.</label>
           </div>
           <button id='btn__submit' className='contact-submit text-base font-semibold text-white w-full py-3 my-4' type='submit'>Send Message</button>
           <p className={success ? 'success-msg text-sm text-green-500 font-semibold text-center absolute' : 'hidden'}>Message Sent</p>
